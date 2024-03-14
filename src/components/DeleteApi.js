@@ -23,9 +23,11 @@ function DeleteApi()
 
     return(
         <div>
+            <h1>Delet data</h1>
             <form onSubmit={Submitform}>
                 <input type="number" placeholder="Enter Roll no" onChange={(e)=>setRollno(e.target.value)}></input><br></br>
                <button>Submit</button>
+               
             </form>
         </div>
     )
