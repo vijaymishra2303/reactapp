@@ -3,6 +3,7 @@ import DeleteApi from "./DeleteApi"
 import GetApi from "./GetApi"
 import Header from "./Header"
 import PostApi from "./PostApi"
+import Home from "./Home"
 
 
 function Routing()
@@ -12,6 +13,7 @@ function Routing()
        <BrowserRouter>
        <Header></Header>
        <Routes>
+       <Route path="/" element={<Home></Home>}></Route>
         <Route path="Post" element={<PostApi></PostApi>}></Route>
         <Route path="Get" element={<GetApi></GetApi>}></Route>
         <Route path="Delete" element={<DeleteApi></DeleteApi>}></Route>

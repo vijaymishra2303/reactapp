@@ -38,6 +38,7 @@ function Header() {
       <div className='logo-hcl'><h1>Logo</h1></div>
       <nav className={`menu ${isOpen ? 'open' : ''}`}>
         <ul>
+        <li> <Link to="/">Home</Link><br></br></li>
         <li> <Link to="Post">Post</Link><br></br></li>
         <li> <Link to="/Delete">Delete</Link><br></br></li>
         <li> <Link to="/Get">Get</Link><br></br></li>
