@@ -35,10 +35,10 @@ function Header() {
       </button>
       <nav className={`menu ${isOpen ? 'open' : ''}`}>
         <ul>
-        <Link to="Post">Post</Link><br></br>
-<Link to="/Delete">Delete</Link><br></br>
-<Link to="/Get">Get</Link><br></br>
-<Link to="/contact">Contact Page</Link><br></br>
+        <li> <Link to="Post">Post</Link><br></br></li>
+        <li> <Link to="/Delete">Delete</Link><br></br></li>
+        <li> <Link to="/Get">Get</Link><br></br></li>
+        <li> <Link to="/contact">Contact Page</Link><br></br></li>
         </ul>
       </nav>
     </div>
