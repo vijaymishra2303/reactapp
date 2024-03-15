@@ -1,5 +1,58 @@
-.navbar-collapse {
-    flex-basis: 100%;
-     flex-grow: 0 !important;
-    align-items: center;
-}
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Adjust as per your layout */
+  }
+  
+  .menu-toggle {
+    display: none; /* Hide by default on larger screens */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    padding: 10px;
+    width: 200px;
+  }
+  
+  .menu.open {
+    display: flex;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Media Query for responsive design */
+  @media screen and (max-width: 768px) {
+    .menu-toggle {
+      display: block; /* Show toggle button on smaller screens */
+    }
+    
+    .menu {
+      position: absolute;
+      top: 0;
+      right: -200px; /* Off-screen initially */
+      transition: transform 0.3s ease;
+    }
+  
+    .menu.open {
+      transform: translateX(-200px); /* Slide in from right when menu is open */
+    }
+  }
+  
