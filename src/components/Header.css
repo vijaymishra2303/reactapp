@@ -1,9 +1,13 @@
 .menu-container {
+   
     display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Adjust as per your layout */
-  }
+    align-items: center;
+    justify-content: space-between;
+}
   
+  
+  .logo-hcl{}
+.logo-hcl h1{}
   .menu-toggle {
     display: none; /* Hide by default on larger screens */
     background: none;
@@ -13,11 +17,10 @@
   }
   
   .menu {
-    display: flex;
-    flex-direction: column;
-    background-color: #333;
+ 
+ 
     padding: 10px;
-    width: 200px;
+   
   }
   
   .menu.open {
@@ -26,11 +29,11 @@
   
   .menu ul {
     list-style-type: none;
-    padding: 0;
+   display: flex;
   }
   
-  .menu li {
-    margin-bottom: 10px;
+  .menu li {padding: 0 15px;
+ 
   }
   
   .menu a {
@@ -38,6 +41,7 @@
     text-decoration: none;
   }
   
+  .logoM{}
   /* Media Query for responsive design */
   @media screen and (max-width: 768px) {
     .menu-toggle {
@@ -56,4 +60,4 @@
     }
   }
   
-  .menu-header{}
+  .menu-header{ background-color: red;}
