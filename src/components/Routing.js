@@ -4,6 +4,7 @@ import GetApi from "./GetApi"
 import Header from "./Header"
 import PostApi from "./PostApi"
 import Home from "./Home"
+import FileUpload from "./FileUpload"
 
 
 function Routing()
@@ -17,6 +18,7 @@ function Routing()
         <Route path="Post" element={<PostApi></PostApi>}></Route>
         <Route path="Get" element={<GetApi></GetApi>}></Route>
         <Route path="Delete" element={<DeleteApi></DeleteApi>}></Route>
+       <Route path="FileUp" element={< FileUpload></FileUpload>}></Route>
        </Routes>
        </BrowserRouter>
         </div>

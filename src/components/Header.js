@@ -42,6 +42,7 @@ function Header() {
         <li> <Link to="Post">Post</Link><br></br></li>
         <li> <Link to="/Delete">Delete</Link><br></br></li>
         <li> <Link to="/Get">Get</Link><br></br></li>
+        <li> <Link to="/FileUp">Post Upload</Link><br></br></li>
 
         </ul>
       </nav>
