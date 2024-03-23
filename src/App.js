@@ -8,7 +8,7 @@ import FileUpload from './components/FileUpload';
 function App() {
   return (
     <div className="App">
-    <FileUpload></FileUpload>
+    <Routing></Routing>
     </div>
   );
 }
