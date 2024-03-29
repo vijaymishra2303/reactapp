@@ -19,6 +19,8 @@ function DeleteApi()
                 console.log(data1)
             })
         })
+
+        alert(rollno + " Has Been Deleted")
     }
 
     return(
@@ -26,7 +28,7 @@ function DeleteApi()
             <h1>Delet data</h1>
             <form onSubmit={Submitform}>
                 <input type="number" placeholder="Enter Roll no" onChange={(e)=>setRollno(e.target.value)}></input><br></br>
-               <button>Submit</button>
+               <button variant="flat">Submit</button>
                
             </form>
         </div>

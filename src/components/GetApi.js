@@ -20,6 +20,7 @@ function GetApi()
             <td>rollno</td>
             <td>name</td>
             <td>Marks</td>
+            <td>Image</td>
       </tr>
         {
           data1.map((item)=>
@@ -27,6 +28,7 @@ function GetApi()
                 <td>{item.rollno}</td>
                 <td>{item.name}</td>
                 <td>{item.marks}</td>
+                <td><img src={item.image} alt={item.name} /></td>
           </tr>
           )
         }

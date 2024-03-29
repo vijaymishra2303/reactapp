@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function PatchApi() {
+function PutApi() {
     const [name, setName] = useState("");
     const [rollno1, setRollno] = useState("");
     const [marks1, setMarks] = useState("");
@@ -11,7 +11,7 @@ function PatchApi() {
         const data = { rollno, name, marks };
 
         fetch("https://hclapi-9wny.onrender.com/", {
-            method: "PATCH",
+            method: "PUT",
             headers: {
                 "Accept": "application/json",
                 "Content-Type": "application/json"
@@ -39,4 +39,4 @@ function PatchApi() {
     );
 }
 
-export default PatchApi;
+export default PutApi;

@@ -5,11 +5,11 @@ function PostApi()
     const [rollno,setRollno]=useState()
     const [name,setName]=useState()
     const [marks,setMarks]=useState()
-    const [image ,setImg]=useState()
+    
     function Submitform(e)
     {
         e.preventDefault()
-        const data={rollno,name,marks,image}
+        const data={rollno,name,marks}
         fetch("https://hclapi-9wny.onrender.com",{
             method:"POST",
             headers:{
@@ -30,7 +30,6 @@ function PostApi()
                 <input type="number" placeholder="Enter Roll no" onChange={(e)=>setRollno(e.target.value)}></input><br></br>
                 <input type="text" placeholder="Enter name" onChange={(e)=>setName(e.target.value)}></input><br></br>
                 <input type="number" placeholder="Enter marks" onChange={(e)=>setMarks(e.target.value)}></input><br></br>
-                <input type="file" placeholder="Enter marks" onChange={(e)=>setMarks(e.target.value)}></input><br></br>
                 <button>Submit</button>
             </form>
         </div>
